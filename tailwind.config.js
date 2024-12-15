@@ -1,0 +1,41 @@
+module.exports = {
+    prefix: 'wp-ingresso-',
+    content: [
+        './templates/*.php',
+        './wp-ingresso/*.php',
+    ],
+    safelist: [
+        'wp-ingresso-border-transparent',
+        'wp-ingresso-border-green',
+        'wp-ingresso-border-blue',
+        'wp-ingresso-border-yellow',
+        'wp-ingresso-border-orange',
+        'wp-ingresso-border-red',
+        'wp-ingresso-border-black',
+        'wp-ingresso-bg-transparent',
+        'wp-ingresso-bg-green',
+        'wp-ingresso-bg-blue',
+        'wp-ingresso-bg-yellow',
+        'wp-ingresso-bg-orange',
+        'wp-ingresso-bg-red',
+        'wp-ingresso-bg-black',
+        'wp-ingresso-bg-orange-400',
+        'wp-ingresso-bg-orange-500',
+    ],
+    theme: {
+        extend: {
+            colors: {
+                green: '#00ff00',
+                blue: '#0000FF',
+                yellow: '#ffff00',
+                orange: '#ffa500',
+                'orange-400': '#fb923c',
+                'orange-500': '#f97316',
+                red: '#ff0000',
+                black: '#000000',
+                transparent: 'transparent',
+            },
+        },
+    },
+    plugins: [],
+};

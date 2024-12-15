@@ -1,0 +1,59 @@
+{
+    "name": "yeremi/wp-ingresso",
+    "description": "API integration with Ingresso.com for online ticket sales.",
+    "license": "GPL-2.0-or-later",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Yeremi Loli",
+            "email": "yeremiloli@yahoo.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "php-di/php-di": "dev-master",
+        "yeremi/route-mapper": "^1.0.0",
+        "yeremi/schema-mapper": "^1.0.0"
+    },
+    "require-dev": {
+        "brain/monkey": "^2",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+        "inpsyde/php-coding-standards": "^2@dev",
+        "johnpbloch/wordpress-core": "~6.5.2",
+        "php-stubs/wordpress-stubs": "dev-master",
+        "phpunit/phpunit": "^9.5",
+        "rector/rector": "^2@dev",
+        "vimeo/psalm": "^6.0@dev"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Yeremi\\Ingresso\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Yeremi\\Ingresso\\Tests\\": "tests/",
+            "Yeremi\\Utilities\\": "utils/"
+        },
+        "classmap": [
+            "tests/Rector/**/Fixture/"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "cs-check": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
+        "cs-fix": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf",
+        "test": "@php ./vendor/phpunit/phpunit/phpunit --no-coverage",
+        "rector-check": "@php ./vendor/bin/rector process --dry-run",
+        "rector-fix": "@php ./vendor/bin/rector process",
+        "psalm-check": "@php ./vendor/vimeo/psalm/psalm --no-suggestions --report-show-info=false --find-unused-psalm-suppress --no-diff --no-cache --no-file-cache --output-format=compact"
+    }
+}

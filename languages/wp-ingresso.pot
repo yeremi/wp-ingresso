@@ -1,0 +1,122 @@
+# Copyright (C) 2025 Yeremi Loli <yeremiloli@yahoo.com>
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Ingresso 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-ingresso\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-01-18T16:59:56+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: wp-ingresso\n"
+
+#. Plugin Name of the plugin
+#: wp-ingresso.php
+msgid "WP Ingresso"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: wp-ingresso.php
+msgid "https://github.com/yeremi/wp-ingresso"
+msgstr ""
+
+#. Description of the plugin
+#: wp-ingresso.php
+msgid "API integration with Ingresso.com for online ticket sales."
+msgstr ""
+
+#. Author of the plugin
+#: wp-ingresso.php
+msgid "Yeremi Loli <yeremiloli@yahoo.com>"
+msgstr ""
+
+#. Author URI of the plugin
+#: wp-ingresso.php
+msgid "https://www.linkedin.com/in/yeremiloli/"
+msgstr ""
+
+#. translators: Not template found message
+#: src/Presentation/Admin/AdminRenderer.php:26
+msgid "Template file not found: %s"
+msgstr ""
+
+#: src/Presentation/Admin/SettingsPage.php:29
+msgctxt "Settings page title"
+msgid "Ingresso Settings"
+msgstr ""
+
+#: src/Presentation/Admin/SettingsPage.php:30
+msgctxt "Menu title"
+msgid "Ingresso"
+msgstr ""
+
+#: src/Presentation/Admin/Templates/admin-settings-template.php:25
+msgctxt "Success message"
+msgid "Settings saved successfully!"
+msgstr ""
+
+#: src/Presentation/Admin/Templates/admin-settings-template.php:35
+msgctxt "Page title"
+msgid "Ingresso Settings"
+msgstr ""
+
+#: src/Presentation/Admin/Templates/admin-settings-template.php:46
+msgid "City ID"
+msgstr ""
+
+#: src/Presentation/Admin/Templates/admin-settings-template.php:58
+msgid "Theater Code"
+msgstr ""
+
+#: src/Presentation/Admin/Templates/admin-settings-template.php:69
+msgid "Partnership Code"
+msgstr ""
+
+#: templates/template-ingresso-event.php:45
+msgid "Watch Trailer"
+msgstr ""
+
+#: templates/template-ingresso-event.php:68
+msgid "Synopsis"
+msgstr ""
+
+#: templates/template-ingresso-event.php:75
+msgid "Cast:"
+msgstr ""
+
+#: templates/template-ingresso-event.php:82
+msgid "Director:"
+msgstr ""
+
+#: templates/template-ingresso-event.php:89
+msgid "Distributor:"
+msgstr ""
+
+#. translators: The theater name
+#: templates/template-ingresso-event.php:131
+msgid "Theater: %s"
+msgstr ""
+
+#: templates/template-ingresso-event.php:151
+msgid "Buy"
+msgstr ""
+
+#: templates/template-ingresso-events.php:38
+msgid "Highlights"
+msgstr ""
+
+#: templates/template-ingresso-events.php:55
+msgid "Upcoming Showtimes"
+msgstr ""
+
+#: templates/template-ingresso-events.php:86
+msgid "See Showtimes"
+msgstr ""
+
+#: templates/template-ingresso-events.php:102
+msgid "Coming soon to theaters"
+msgstr ""

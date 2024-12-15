@@ -1,0 +1,46 @@
+{
+	"name": "wp-ingresso",
+	"version": "0.1.0",
+	"author": "Yeremi Loli",
+	"homepage": "https://github.com/yeremi/wp-ingresso",
+	"description": "API integration with Ingresso.com for online ticket sales.",
+	"license": "GPL-2.0-or-later",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/yeremi/wp-ingresso-api.git"
+	},
+	"files": [
+		"assets",
+		"src",
+		"languages",
+		"templates",
+		"vendor",
+		"wp-ingresso.php"
+	],
+	"scripts": {
+		"dev:scss": "tailwindcss -i ./resources/scss/frontend.scss -o ./assets/css/wp-ingresso-styles.css",
+		"dev:js": "webpack --watch",
+		"build": "bash ./build.sh"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^30.6.0",
+		"autoprefixer": "^10.4.20",
+		"css-loader": "^7.1.2",
+		"cssnano": "^7.0.6",
+		"mini-css-extract-plugin": "^2.9.2",
+		"postcss": "^8.5.0",
+		"postcss-loader": "^8.1.1",
+		"sass": "^1.83.4",
+		"sass-loader": "^16.0.4",
+		"style-loader": "^4.0.0",
+		"tailwindcss": "^3.4.17",
+		"ts-loader": "^9.5.2",
+		"typescript": "^5.7.3",
+		"webpack": "^5.97.1",
+		"webpack-cli": "^6.0.1"
+	},
+	"dependencies": {
+		"video.js": "^8.21.0",
+		"videojs-youtube": "^3.0.1"
+	}
+}

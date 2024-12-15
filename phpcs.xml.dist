@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="WP-Ingresso-Rules">
+
+    <description>WP Ingresso Rules PHPCS Ruleset</description>
+
+    <file>./src/</file>
+    <file>./utils/</file>
+    <file>./tests/</file>
+    <file>./templates/</file>
+    <file>./wp-ingresso.php</file>
+    <file>./rector.php</file>
+
+    <arg name="colors"/>
+    <config name="testVersion" value="8.2-"/>
+    <config name="text_domain" value="wp-ingresso"/>
+    <config name="ignore_warnings_on_exit" value="1"/>
+
+    <rule ref="Inpsyde">
+        <exclude name="Inpsyde.CodeQuality.NoAccessors.NoGetter"/>
+        <exclude name="Inpsyde.CodeQuality.NoAccessors.NoSetter"/>
+    </rule>
+
+    <rule ref="Inpsyde.CodeQuality.Psr4">
+        <properties>
+            <property
+                    name="psr4"
+                    type="array"
+                    value="Yeremi\Ingresso=>src,Yeremi\Utilities=>utils,Yeremi\Ingresso\Tests=>tests"
+            />
+        </properties>
+    </rule>
+
+    <rule ref="Inpsyde.CodeQuality.LineLength">
+        <exclude-pattern>./templates/*.php</exclude-pattern>
+        <exclude-pattern>./src/Infrastructure/Config/config.php</exclude-pattern>
+    </rule>
+
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/tests/**/Fixture/*.php.inc</exclude-pattern>
+</ruleset>

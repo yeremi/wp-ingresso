@@ -1,0 +1,25 @@
+{
+  "core": "WordPress/WordPress#6.5.2",
+  "phpVersion": "8.2",
+  "plugins": [
+    ".",
+    "https://downloads.wordpress.org/plugin/plugin-check.zip",
+    "https://downloads.wordpress.org/plugin/query-monitor.zip"
+  ],
+  "themes": ["."],
+  "env": {
+    "development": {
+      "config": {
+        "WP_DEBUG": true,
+        "SCRIPT_DEBUG": true,
+        "WP_DEBUG_LOG": "./wp-errors.log",
+        "WP_ENVIRONMENT_TYPE": "local"
+      }
+    },
+    "tests": {
+      "config": {
+        "WP_ENVIRONMENT_TYPE": "production"
+      }
+    }
+  }
+}
