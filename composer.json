@@ -46,6 +46,9 @@
         "sort-packages": true,
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
+        },
+        "platform": {
+            "php": "8.2.4"
         }
     },
     "scripts": {
@@ -55,5 +58,6 @@
         "rector-check": "@php ./vendor/bin/rector process --dry-run",
         "rector-fix": "@php ./vendor/bin/rector process",
         "psalm-check": "@php ./vendor/vimeo/psalm/psalm --no-suggestions --report-show-info=false --find-unused-psalm-suppress --no-diff --no-cache --no-file-cache --output-format=compact"
-    }
+    },
+    "prefer-stable": true
 }

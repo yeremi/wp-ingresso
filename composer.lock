@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "391a5b56ac92a2c57c1b3aab69e24cc1",
+    "content-hash": "88d418af32463b5a5fb53fbc892111d0",
     "packages": [
         {
             "name": "laravel/serializable-closure",
@@ -1589,20 +1589,22 @@
         },
         {
             "name": "hamcrest/hamcrest-php",
-            "version": "dev-master",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hamcrest/hamcrest-php.git",
-                "reference": "515bc471fce72631265184d96d1777770f16d230"
+                "reference": "b61cd040da1a4925bc90a51c074f5297e7c0fa52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hamcrest/hamcrest-php/zipball/515bc471fce72631265184d96d1777770f16d230",
-                "reference": "515bc471fce72631265184d96d1777770f16d230",
+                "url": "https://api.github.com/repos/hamcrest/hamcrest-php/zipball/b61cd040da1a4925bc90a51c074f5297e7c0fa52",
+                "reference": "b61cd040da1a4925bc90a51c074f5297e7c0fa52",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3|^7.0|^8.0"
+                "ext-ctype": "*",
+                "ext-dom": "*",
+                "php": "^7.4|^8.0"
             },
             "replace": {
                 "cordoval/hamcrest-php": "*",
@@ -1610,14 +1612,15 @@
                 "kodova/hamcrest-php": "*"
             },
             "require-dev": {
+                "phpstan/phpstan": "^2.1",
+                "phpstan/phpstan-phpunit": "^2.0",
                 "phpunit/php-file-iterator": "^1.4 || ^2.0 || ^3.0",
                 "phpunit/phpunit": "^4.8.36 || ^5.7 || ^6.5 || ^7.0 || ^8.0 || ^9.0"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -1635,9 +1638,9 @@
             ],
             "support": {
                 "issues": "https://github.com/hamcrest/hamcrest-php/issues",
-                "source": "https://github.com/hamcrest/hamcrest-php/tree/master"
+                "source": "https://github.com/hamcrest/hamcrest-php/tree/v3.0.0"
             },
-            "time": "2024-11-24T15:17:53+00:00"
+            "time": "2026-03-17T11:56:53+00:00"
         },
         {
             "name": "inpsyde/php-coding-standards",
@@ -1765,28 +1768,28 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "1.7.x-dev",
+            "version": "1.6.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "3f8d3ff1ffe4c552d45c5690c6d825e9310769bf"
+                "reference": "967a801bd188989a5669bd280f252d51c0fdc9ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/3f8d3ff1ffe4c552d45c5690c6d825e9310769bf",
-                "reference": "3f8d3ff1ffe4c552d45c5690c6d825e9310769bf",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/967a801bd188989a5669bd280f252d51c0fdc9ee",
+                "reference": "967a801bd188989a5669bd280f252d51c0fdc9ee",
                 "shasum": ""
             },
             "require": {
-                "hamcrest/hamcrest-php": "^2.0.1",
-                "lib-pcre": ">=7.0",
+                "hamcrest/hamcrest-php": "^2.0 || ^3.0",
                 "php": ">=7.3"
             },
             "conflict": {
                 "phpunit/phpunit": "<8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": ">=9.6.11 <10.4"
+                "phpunit/phpunit": "^9.6.36",
+                "symplify/easy-coding-standard": "^13.2.17"
             },
             "type": "library",
             "autoload": {
@@ -1843,7 +1846,7 @@
                 "security": "https://github.com/mockery/mockery/security/advisories",
                 "source": "https://github.com/mockery/mockery"
             },
-            "time": "2023-10-01T17:31:30+00:00"
+            "time": "2026-08-19T19:37:52+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -5584,11 +5587,14 @@
         "rector/rector": 20,
         "vimeo/psalm": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
     "platform-dev": {},
+    "platform-overrides": {
+        "php": "8.2.4"
+    },
     "plugin-api-version": "2.6.0"
 }
