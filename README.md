@@ -33,7 +33,7 @@ After that, make sure to activate the plugin from your WordPress dashboard.
 ## Requirements
 
 - **WordPress Version**: ^6.5.2.
-- **PHP Version**: 8.1 or higher.
+- **PHP Version**: 8.2 or higher.
 
 ---
 
