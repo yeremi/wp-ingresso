@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": "^8.2",
-        "php-di/php-di": "dev-master",
+        "php-di/php-di": "^7.1",
         "yeremi/route-mapper": "^1.0.0",
         "yeremi/schema-mapper": "^1.0.0"
     },

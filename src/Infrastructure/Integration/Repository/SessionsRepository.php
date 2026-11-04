@@ -69,7 +69,7 @@ class SessionsRepository extends AbstractRepository implements SessionsRepositor
         }
 
         /** @var ShowTimeByMovie[] $return */
-        $return = $this->apiSchemaNormalizer->normalize($response, ShowTimeByMovie::class);
+        $return = $this->handleRequest($response, ShowTimeByMovie::class);
         return $return;
     }
 
@@ -96,6 +96,7 @@ class SessionsRepository extends AbstractRepository implements SessionsRepositor
     public function fetchDatedByEvent(string $eventId): ?ShowtimeDates
     {
         $parameters = [
+            'cityId' => $this->settingsEntity->getCityId(),
             'eventId' => $eventId,
             'partnership' => $this->settingsEntity->getPartnership(),
         ];
