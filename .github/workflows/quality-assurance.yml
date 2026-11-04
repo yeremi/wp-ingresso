@@ -10,12 +10,12 @@ on:
 
 jobs:
   coding-standards-analysis:
-    uses: inpsyde/reusable-workflows/.github/workflows/coding-standards-php.yml@main
+    uses: inpsyde/reusable-workflows/.github/workflows/coding-standards-php.yml@b735299aff11696c6214e22cc5d608e8bd61808b # main @ 2026-11-04
     with:
       PHP_VERSION: '8.2'
 
   static-code-analysis:
-    uses: inpsyde/reusable-workflows/.github/workflows/static-analysis-php.yml@main
+    uses: inpsyde/reusable-workflows/.github/workflows/static-analysis-php.yml@b735299aff11696c6214e22cc5d608e8bd61808b # main @ 2026-11-04
     strategy:
       matrix:
         php: [ '8.2' ]
@@ -24,7 +24,7 @@ jobs:
       PSALM_ARGS: --output-format=github --no-suggestions --no-cache --no-diff --find-unused-psalm-suppress
 
   unit-tests:
-    uses: inpsyde/reusable-workflows/.github/workflows/tests-unit-php.yml@main
+    uses: inpsyde/reusable-workflows/.github/workflows/tests-unit-php.yml@b735299aff11696c6214e22cc5d608e8bd61808b # main @ 2026-11-04
     strategy:
       matrix:
         php: [ '8.2' ]
